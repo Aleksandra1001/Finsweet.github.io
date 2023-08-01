@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "SenBold";
+}
+.container {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header {
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-top: 25px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__block {
+        display: flex;
+        gap: 25px;
+
+    }
+    &__item {
+        margin-top: 27px;
+    }
+    &__link{
+        text-decoration: none;
+        color: $accent_color;
+        font-family: $inter_regular;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+    }
+}
+nav {
+    position: relative;
+    width: 100%;
+    height: 80px; 
+    background: #232536;
+}
+.button {
+    display: block;
+    width: max-content;
+    height: 56px;
+    background: $main_color;
+    padding: 16px 48px;
+    color: $text_color;
+    font-family: $sen_bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    &:hover {
+        background: $hover_color;
+    }
+    &__outline {
+        background: $accent_color;
+    }
+    &__default {
+        background: $main_color;
+    }
+}
+.title {
+    font-family: $sen_bold;
+    color: $text_color;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    &-h1 {
+        font-size: 56px;
+        line-height: 64px;
+        &_light {
+            color: $accent_color;
+        }
+    }
+    &-h2 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+    &-h3 {
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -2px;
+        &_light {
+            color: $accent_color;
+        }
+    }
+    &-h4 {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+    &-h5 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0;
+    }
+    &-h6 {
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0;
+    }
+}
+.text {
+    font-family: $inter_regular;
+    font-size: 16px;
+    line-height: 28px;
+    color: $text_color;
+    &_light {
+        color: $accent_color;
+    }
+    &_medium {
+        font-family: $inter_semi_Bold;
+        // font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    &_small {
+        font-family: $inter_medium;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.shape {
+    width: 1060px;
+    height: 23px;
+    background: $other_color;
+    margin-left: 220px;
+    span {
+        display: block;
+        height: 100%;
+        width: 780px;
+        background: $main_color;
+    }
+}
+footer {
+    margin-top: 130px;
+    background-color: $text_color;
+    padding: 60px 80px;
+.footer {
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__block {
+        display: flex;
+        gap: 25px;
+
+    }
+    &__link{
+        text-decoration: none;
+        color: $accent_color;
+        font-family: $inter_regular;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__descr {
+        margin-top: 57px;
+        background: $border_color;
+        // opacity: 0.05000000074505806;
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
+        padding: 80px 64px;
+    }
+    &__title {
+        max-width: 562px;
+    }
+    &__btn {
+        display: flex;
+        gap: 24px;
+    }
+    &__button {
+        &_invisible {
+            background: $border_color;
+            width: 323px;
+            padding-left: 25px;
+            font-size: 16px;
+            line-height: 28px;
+            border: 1px solid $border_button_color;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__sociale {
+        display: flex;
+        gap: 26px;
+    }
+    &__icon {
+        img {
+            background-color: $accent_color;
+        }
+    }
+}
+    
+}
