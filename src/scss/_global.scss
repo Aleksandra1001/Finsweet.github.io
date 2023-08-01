@@ -57,6 +57,8 @@ nav {
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
+    transition: 0.4s;
+
     &:hover {
         background: $hover_color;
     }
@@ -128,6 +130,9 @@ nav {
         font-size: 14px;
         line-height: 20px;
     }
+    span {
+        font-family: $inter_regular;
+    }
 }
 .shape {
     width: 1060px;
@@ -141,11 +146,12 @@ nav {
         background: $main_color;
     }
 }
-footer {
+
+.footer {
     margin-top: 130px;
     background-color: $text_color;
     padding: 60px 80px;
-.footer {
+
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -166,9 +172,9 @@ footer {
         font-size: 16px;
         line-height: 28px;
     }
-    &__descr {
+    &__subscribe {
         margin-top: 57px;
-        background: $border_color;
+        background: $accent_color_05;
         // opacity: 0.05000000074505806;
         display: flex;
         justify-content: space-between;
@@ -178,11 +184,12 @@ footer {
     &__title {
         max-width: 562px;
     }
-    &__btn {
+    &__form {
         display: flex;
         gap: 24px;
     }
     &__button {
+        border: none;
         &_invisible {
             background: $border_color;
             width: 323px;
@@ -191,6 +198,17 @@ footer {
             line-height: 28px;
             border: 1px solid $border_button_color;
         }
+    }
+    &__input {
+        padding: 14px 25px;
+        background: transparent;
+        font-size: 16px;
+        line-height: 28px;
+        color: $border_color;
+        border: 1px solid $border_button_color;
+        width: 324px;
+        height: 56px;
+        font-family: "Inter-Regular";
     }
     &__wrapper {
         display: flex;
@@ -206,6 +224,4 @@ footer {
             background-color: $accent_color;
         }
     }
-}
-    
 }
