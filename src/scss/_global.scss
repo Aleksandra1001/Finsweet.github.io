@@ -8,6 +8,16 @@
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
+    &__author {
+        position: relative;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    &__contacts, &__policy {
+        position: relative;
+        max-width: 768px;
+        margin: 0 auto;
+    }
 }
 .header {
     &__menu {
@@ -57,16 +67,12 @@ nav {
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
-    transition: 0.4s;
-
+    transition: 0.5s;
     &:hover {
         background: $hover_color;
     }
     &__outline {
         background: $accent_color;
-    }
-    &__default {
-        background: $main_color;
     }
 }
 .title {
@@ -78,6 +84,7 @@ nav {
     &-h1 {
         font-size: 56px;
         line-height: 64px;
+        letter-spacing: -2px;
         &_light {
             color: $accent_color;
         }
@@ -85,6 +92,7 @@ nav {
     &-h2 {
         font-size: 48px;
         line-height: 64px;
+        letter-spacing: -2px;
     }
     &-h3 {
         font-size: 36px;
@@ -103,6 +111,12 @@ nav {
         font-size: 24px;
         line-height: 32px;
         letter-spacing: 0;
+        &_light {
+            font-size: 20px;
+            line-height: 32px;
+            color: $accent_color;
+            letter-spacing: 0;
+        }
     }
     &-h6 {
         font-size: 18px;
@@ -115,12 +129,17 @@ nav {
     font-size: 16px;
     line-height: 28px;
     color: $text_color;
+    p {
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
     &_light {
         color: $accent_color;
     }
     &_medium {
         font-family: $inter_semi_Bold;
-        // font-size: 16px;
+        font-size: 16px;
         line-height: 20px;
         letter-spacing: 3px;
         text-transform: uppercase;
@@ -129,29 +148,31 @@ nav {
         font-family: $inter_medium;
         font-size: 14px;
         line-height: 20px;
-    }
-    span {
-        font-family: $inter_regular;
+        &-light {
+            color: $accent_color_06;
+        }
+       
     }
 }
-.shape {
-    width: 1060px;
-    height: 23px;
-    background: $other_color;
-    margin-left: 220px;
-    span {
+.join {
+    padding-top: 130px;
+    &__title {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &__button {
         display: block;
-        height: 100%;
-        width: 780px;
-        background: $main_color;
+        margin: 0 auto;
     }
 }
-
 .footer {
     margin-top: 130px;
     background-color: $text_color;
     padding: 60px 80px;
-
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -175,11 +196,11 @@ nav {
     &__subscribe {
         margin-top: 57px;
         background: $accent_color_05;
-        // opacity: 0.05000000074505806;
         display: flex;
         justify-content: space-between;
         gap: 64px;
         padding: 80px 64px;
+        align-items: center;
     }
     &__title {
         max-width: 562px;
@@ -187,17 +208,6 @@ nav {
     &__form {
         display: flex;
         gap: 24px;
-    }
-    &__button {
-        border: none;
-        &_invisible {
-            background: $border_color;
-            width: 323px;
-            padding-left: 25px;
-            font-size: 16px;
-            line-height: 28px;
-            border: 1px solid $border_button_color;
-        }
     }
     &__input {
         padding: 14px 25px;
@@ -210,6 +220,18 @@ nav {
         height: 56px;
         font-family: "Inter-Regular";
     }
+    &__button {
+        width: 180px;
+        padding-left: 25px;
+        font-size: 16px;
+        line-height: 28px;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            background: $hover_color;
+        }
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -220,8 +242,12 @@ nav {
         gap: 26px;
     }
     &__icon {
-        img {
-            background-color: $accent_color;
+        .img-svg path {
+            fill: $border_color;
+            width: 100%;
+            height: 100%;
+            max-width: 16px;
+            max-height: 16px;
         }
     }
 }

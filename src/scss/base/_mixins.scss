@@ -1,0 +1,46 @@
+@mixin before_shape {
+    &:before {
+        content: "";
+        position: absolute;
+        left: 109px;
+        top: 421px;
+        width: 310px;
+        height: 23px;
+        background: $other_color;  
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        height: 23px;
+        width: 550px;
+        background: $main_color;
+        left: 415px;
+        top: 421px;
+    }
+}
+  
+@mixin befor_rectangle {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 103px;
+        height: 116px;
+        background-color: $main_color;
+        border-radius: 50% 0 0 0;
+        top: 114px;
+        right: 578px;
+    }
+}
+
+@mixin before_circle {
+    &:before {
+        content: "";
+        position: absolute;
+        width: 74px;
+        height: 74px;
+        background-color: $other_color;
+        border-radius: 100%;
+        top: 443px;
+        left: 107px;
+    }
+}
