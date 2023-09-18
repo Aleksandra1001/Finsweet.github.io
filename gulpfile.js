@@ -13,6 +13,7 @@ const gulp = require("gulp"),
   plumber = require("gulp-plumber"),
   notify = require("gulp-notify"),
   rigger = require("gulp-rigger"),
+  fileInclude = require("gulp-file-include"),
   cleanCSS = require("gulp-clean-css");
 
 var path = {
@@ -61,6 +62,19 @@ function html() {
       plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
     )
     .pipe(rigger())
+    .pipe(dest(path.dist.html))
+    .pipe(browserSync.stream());
+}
+
+function include() {
+  return src(path.src.html)
+    .pipe(
+      plumber({ errorHandler: notify.onError("Error: <%= error.message %>") })
+    )
+    .pipe(fileInclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe(dest(path.dist.html))
     .pipe(browserSync.stream());
 }
@@ -148,6 +162,7 @@ function watching() {
   watch([path.watch.img], images);
   watch([path.watch.fonts], fonts);
   watch([path.watch.php], php);
+  watch([path.watch.html], include);
 }
 
 exports.clean = clean;
@@ -157,10 +172,11 @@ exports.scripts = scripts;
 exports.images = images;
 exports.fonts = fonts;
 exports.php = php;
+exports.include = include;
 exports.watching = watching;
 exports.browsersync = browsersync;
 
-exports.build = parallel(html, styles, scripts, images, fonts, php);
+exports.build = parallel(html, styles, scripts, images, fonts, include, php);
 exports.default = parallel(
   clean,
   html,
@@ -169,6 +185,7 @@ exports.default = parallel(
   images,
   fonts,
   php,
+  include,
   browsersync,
   watching
 );
