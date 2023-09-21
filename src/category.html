@@ -7,35 +7,25 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav>
-            <div class="container">
-                <div class="header__menu">
-                    <div class="header__logo">
-                        <a href="/">
-                            <img class="img-svg" src="img/logo/header_logo.svg" alt="logo">
-                        </a>
-                    </div>
-                    <div class="header__block">
-                        <div class="header__item">
-                            <a href="#" class="header__link">Home</a>
-                        </div>
-                        <div class="header__item">
-                            <a href="#" class="header__link">Blog</a>
-                        </div>
-                        <div class="header__item">
-                            <a href="#" class="header__link">About Us</a>
-                        </div>
-                        <div class="header__item">
-                            <a href="#" class="header__link">Contact us</a>
-                        </div>
-                        <a href="#" class="button button__outline header__button">Subscribe</a>
-                    </div>
-                </div>
+    @@include_once('./html-components/header.html')
+    <!-- <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <a href="/" class="header__logo">
+                    <img class="img-svg" src="img/logo/header_logo.svg" alt="logo">
+                </a>
+                <nav class="header__block">
+                    <a href="/index.html" class="header__link">Home</a>
+                    <a href="/blog.html" class="header__link">Blog</a>
+                    <a href="/about.html" class="header__link">About Us</a>
+                    <a href="/contacts.html" class="header__link">Contact us</a>
+                    <a href="/contacts.html" class="button button__outline header__button">Subscribe</a>
+                </nav>
             </div>
-        </nav>
-    </header>
+        </div>
+    </header> -->
 
     <section class="business">
         <div class="container">
@@ -175,6 +165,7 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
     
