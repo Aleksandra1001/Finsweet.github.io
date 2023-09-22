@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finsweet</title>
     
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -243,25 +244,56 @@
                     <h3 class="title title-h3 reviews__title">What people say about our blog</h3>
                     <div class="text reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 </div>
-                <div class="reviews__item">
-                    <h5 class="title title-h5 reviews__block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-                    <div class="reviews__wrapper">
-                        <div class="reviews__img">
-                            <img src="img/home/reviews_picture.png" alt="Jonathan Vallem"> 
-                        </div>
-                        <div class="reviews__about">
-                            <h5 class="title title-h5 reviews__name">Jonathan Vallem</h5>
-                            <div class="text reviews__address">New york, USA</div>
-                        </div>
-                        <div class="reviews__btn">
-                            <a href="#" class="reviews__btn-back"><img src="img/icons/back_button.svg" alt="back_button"></a>
-                            <a href="#" class="reviews__btn-next"><img src="img/icons/next_button.svg" alt="next_button"></a>  
+                <div class="carousel">
+                    <div class="container">
+                        <div class="carousel__inner">
+                            <div class="reviews__item">
+                                <h5 class="title title-h5 reviews__block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                                <div class="reviews__wrapper">
+                                    <div class="reviews__img">
+                                        <img src="img/home/reviews_picture.png" alt="Jonathan Vallem"> 
+                                    </div>
+                                    <div class="reviews__about">
+                                        <h5 class="title title-h5 reviews__name">Jonathan Vallem</h5>
+                                        <div class="text reviews__address">New york, USA</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reviews__item">
+                                <h5 class="title title-h5 reviews__block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                                <div class="reviews__wrapper">
+                                    <div class="reviews__img">
+                                        <img src="https://img.joinfo.com/i/2019/06/800x0/5d0c8a3865eb9.jpg" alt="Matthew Perry"> 
+                                    </div>
+                                    <div class="reviews__about">
+                                        <h5 class="title title-h5 reviews__name">Matthew Perry</h5>
+                                        <div class="text reviews__address">
+                                            Washington, USA</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="reviews__item">
+                                <h5 class="title title-h5 reviews__block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+                                <div class="reviews__wrapper">
+                                    <div class="reviews__img">
+                                        <img src="https://cdn.semana.es/wp-content/uploads/2021/08/keanu.jpg" alt="Jonathan Vallem"> 
+                                    </div>
+                                    <div class="reviews__about">
+                                        <h5 class="title title-h5 reviews__name">Keanu Reeves</h5>
+                                        <div class="text reviews__address">london, UK</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <section class="join">
         <div class="container">
             <h3 class="title title-h3 join__title">Join our team to be a part <br> of our story</h3>
@@ -270,6 +302,7 @@
         </div>
     </section>
 
+       <!-- @@include_once('./html-components/footer.html') -->
     <footer class="footer">
         <div class="container">
             <div class="footer__menu">
@@ -280,24 +313,24 @@
                 </div>
                 <div class="footer__block">
                     <div class="footer__item">
-                        <a href="#" class="footer__link">Home</a>
+                        <a href="/index.html" class="footer__link">Home</a>
                     </div>
                     <div class="footer__item">
-                        <a href="#" class="footer__link">Blog</a>
+                        <a href="/blog.html" class="footer__link">Blog</a>
                     </div>
                     <div class="footer__item">
-                        <a href="#" class="footer__link">About Us</a>
+                        <a href="/about.html" class="footer__link">About Us</a>
                     </div>
                     <div class="footer__item">
-                        <a href="#" class="footer__link">Contact us</a>
+                        <a href="/contacts.html" class="footer__link">Contact us</a>
                     </div>
                     <div class="footer__item">
-                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="/PrivacyPolicy.html" class="footer__link">Privacy Policy</a>
                     </div>
                 </div>
             </div>
             <div class="footer__subscribe">
-                <div class="title title-h3 title-h3_light footer__title">Subscribe to our news letter to get latest updates and news</div>
+                <div class="title title-h3_light footer__title">Subscribe to our news letter to get latest updates and news</div>
                 <form method="POST" class="footer__form">
                     <input name="email" placeholder="Enter Your Email" class="footer__input">
                     <button type="submit" class="button footer__button">Subscribe</button>
@@ -325,6 +358,11 @@
             </div>
         </div>
     </footer>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

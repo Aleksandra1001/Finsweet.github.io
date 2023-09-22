@@ -38,3 +38,23 @@ $("img.img-svg").each(function () {
     "xml"
   );
 });
+
+
+$(document).ready(function(){
+    $('.carousel__inner').slick({
+        // infinite: false,
+        speed: 1200,
+        adaptiveHeight: true,
+        prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/back_button.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/next_button.svg"></button>',
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                dots: true,
+                arrows: false
+              }
+            }
+        ]
+      });
+  });
