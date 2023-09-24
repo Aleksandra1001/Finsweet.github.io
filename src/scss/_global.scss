@@ -20,15 +20,11 @@
     }
 }
 .header {
-    // position: relative;
     background: #232536;
     &__menu {
         display: flex;
-        // justify-content: space-between;
-        
     }
     &__logo {
-        // margin-top: 25px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -37,12 +33,9 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        // gap: 25px;
+        gap: 24px;
         width: 100%;
         height: 80px;
-        a:nth-child(4) {
-            margin-right: 32px;
-        }
     }
     &__link{
         text-decoration: none;
@@ -50,20 +43,14 @@
         font-family: $inter_regular;
         font-size: 16px;
         line-height: 28px;
-        margin-right: 25px;
     }
     &__button {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        margin-left: 8px;
     }
 }
-// nav {
-//     position: relative;
-//     width: 100%;
-//     height: 80px; 
-//     background: #232536;
-// }
 .button {
     display: block;
     width: max-content;
@@ -170,30 +157,62 @@
     }
     .slick-prev {
         position: absolute;
-        top: 75%;
-        transform: translateY(-50%);
+        bottom: 87px;
+        // transform: translateY(-50%);
         right: 185px;
-        border: none;
+        border:none;
         cursor: pointer;
-        img {
-            width: 62px;
-            height: 62px;  
+        img, svg {
+            width: 48px;
+            height: 48px;
+            transition: 0.4s;
+            circle, path {
+                transition: 0.4s;
+            }
         }
+        &:hover {
+            img, svg {
+                transform: scale(1.3);
+                circle {
+                    fill: $text_color;
+                }
+                path {
+                    fill: $accent_color;
+                }
+            }
+        } 
+       
     }
     .slick-next {
         position: absolute;
-        top: 75%;
-        transform: translateY(-50%);
+        bottom: 87px;
+        // transform: translateY(-50%);
         right: 110px;
         left: auto;
         border: none;
+        z-index: 100;
         cursor: pointer;
-        img {
-            width: 62px;
-            height: 62px;  
+        img, svg {
+            width: 48px;
+            height: 48px;
+            transition: 0.4s;
+            transform: rotate(180deg);
+            circle, path {
+                transition: 0.4s;
+            }
         }
-        
-    }
+        &:hover {
+            img, svg {
+                transform: rotate(180deg) scale(1.3);
+                circle {
+                    fill: $text_color;
+                }
+                path {
+                    fill: $accent_color;
+                }
+            }
+        } 
+    } 
 }
 
 
@@ -216,7 +235,7 @@
 .footer {
     margin-top: 130px;
     background-color: $text_color;
-    padding: 60px 80px;
+    padding: 60px 0;
     &__menu {
         display: flex;
         justify-content: space-between;
@@ -275,6 +294,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-top: 50px;
     }
     &__sociale {
