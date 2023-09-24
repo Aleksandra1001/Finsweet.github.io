@@ -1,3 +1,24 @@
+@mixin after_shape {
+    &:before {
+        content: "";
+        position: absolute;
+        right: 282px;
+        top: -23px;
+        width: 780px;
+        height: 23px;
+        background: $main_color;  
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        height: 23px;
+        width: 282px;
+        background: $other_color;
+        right: 0;
+        top: -23px;
+    }
+}
+
 @mixin before_shape {
     &:before {
         content: "";
