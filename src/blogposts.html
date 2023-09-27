@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    @@include_once('./html-components/header.html')
-    <!-- <header class="header">
+    <!-- @@include_once('./html-components/header.html') -->
+    <header class="header">
         <div class="container">
             <div class="header__menu">
                 <a href="/" class="header__logo">
@@ -25,7 +25,7 @@
                 </nav>
             </div>
         </div>
-    </header> -->
+    </header>
 
     <section class="heading">
         <div class="container">
@@ -38,7 +38,7 @@
             </div>
             <h2 class="title title-h2 heading__title">Step-by-step guide to choosing great font pairs</h2>
             <div class="heading__block">
-                <img src="img/icons/shuttle.svg" alt="shuttle">
+                <img class="heading__icon" src="img/icons/shuttle.svg" alt="shuttle">
                 <h5 class="title title-h5 ">Startup</h5>
             </div>
         </div>
@@ -46,13 +46,13 @@
 
     <section class="content">
         <div class="container">
-            <img src="img/woman_eyeglasses.png" alt="woman_eyeglasses">
+            <img class="content__img" src="img/woman_eyeglasses.png" alt="woman_eyeglasses">
             <div class="content__block">
                 <div class="content__descr">
                     <h1 class="title content__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h1>
-                    <div class="text content__text">
+                    <p class="text content__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non     blandit     massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque     penatibus et magnis     dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam.     Risus in hendrerit gravida  rutrum quisque non.
-                    </div>
+                    </p>
                 </div>
 
                 <div class="content__descr">
@@ -70,9 +70,9 @@
 
                 <div class="content__descr">
                     <h1 class="title content__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h1>
-                    <div class="text content__text">
+                    <p class="text content__text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non     blandit     massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque     penatibus et magnis     dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam.     Risus in hendrerit gravida  rutrum quisque non.
-                    </div>
+                    </p>
                 </div>
             </div>
         </div>
@@ -83,31 +83,28 @@
             <h3 class="title title-h3 read__title">What to read next</h3>
             <div class="read__list">
                 <div class="read__item">
-                    <img src="img/blog/two_women.png" alt="two_women" class="read__img">
-                    <div class="text text_small read__text">By <span>John Doe</span>   l   Aug 23, 2021 </div>
-                    <h4 class="title title-h4 read__subtitle">A UX Case Study Creating a Studious Environment for Students:</h4>
-                    <div class="text read__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                    <a href="/blogposts.html"><img src="img/blog/two_women.png" alt="two_women" class="read__img"></a>
+                    <div class="text text_small read__text">By <a href="/author.html">John Doe</a>   l   Aug 23, 2021 </div>
+                    <a href="/blogposts.html"h4 class="title title-h4 read__subtitle">A UX Case Study Creating a Studious Environment for Students:</a>
+                    <p class="text read__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
 
                 <div class="read__item">
-                    <img src="img/blog/people.png" alt="people" class="read__img">
-                    <div class="text text_small read__text">By <span>John Doe</span>   l   Aug 23, 2021 </div>
-                    <h4 class="title title-h4 read__subtitle">A UX Case Study Creating a Studious Environment for Students:</h4>
-                    <div class="text read__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                    <a href="/blogposts.html"><img src="img/blog/people.png" alt="people" class="read__img"></a>
+                    <div class="text text_small read__text">By <a href="/author.html">John Doe</a>   l   Aug 23, 2021 </div>
+                    <a href="/blogposts.html" class="title title-h4 read__subtitle">A UX Case Study Creating a Studious Environment for Students:</a>
+                    <p class="text read__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
 
                 <div class="read__item">
-                    <img src="img/blog/woman_looking.png" alt="woman_looking" class="read__img">
-                    <div class="text text_small read__text">By <span>John Doe</span>   l   Aug 23, 2021 </div>
-                    <h4 class="title title-h4 read__subtitle">A UX Case Study Creating a Studious Environment for Students:</h4>
-                    <div class="text read__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
+                    <a href="/blogposts.html"><img src="img/blog/woman_looking.png" alt="woman_looking" class="read__img"></a>
+                    <div class="text text_small read__text">By <a href="/author.html">John Doe</a>   l   Aug 23, 2021 </div>
+                    <a href="/blogposts.html" class="title title-h4 read__subtitle">A UX Case Study Creating a Studious Environment for Students:</a>
+                    <p class="text read__content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 
     <section class="join">
         <div class="container">
@@ -173,6 +170,9 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

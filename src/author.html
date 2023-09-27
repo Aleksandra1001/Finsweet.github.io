@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    @@include_once('./html-components/header.html')
-    <!-- <header class="header">
+    <!-- @@include_once('./html-components/header.html') -->
+    <header class="header">
         <div class="container">
             <div class="header__menu">
                 <a href="/" class="header__logo">
@@ -25,17 +25,17 @@
                 </nav>
             </div>
         </div>
-    </header> -->
+    </header>
 
     <section class="promo-author">
-        <div class="container_author">
+        <div class="container_author promo-author__container_author">
             <div class="promo-author__wrapper">
                 <div class="promo-author__img">
                     <img src="img/author/promo_author.png" alt="Andrew Jonhson">
                 </div>
                 <div class="promo-author__descr">
                     <h2 class="title title-h2 promo-author__title">Hey there, I’m Andrew Jonhson and welcome to my Blog</h2>
-                    <div class="text promo-author__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut      labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</div>
+                    <p class="text promo-author__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut      labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.</p>
                     <div class="promo-author__sociale">
                         <a href="#" class="promo-author__icon">
                             <img class="img-svg" src="img/icons/facebook.svg" alt="facebook">
@@ -59,19 +59,19 @@
         <div class="container_author">
             <h2 class="title title-h2 posts-author__title">My Posts</h2>
             <div class="posts-author__item">
-                <img src="img/author/buildings.png" alt="buildings" class="posts-author__img">
+                <a href="/blogposts.html"><img src="img/author/buildings.png" alt="buildings" class="posts-author__img"></a>
                 <div class="posts-author__descr">
-                    <div class="text text_medium posts-author__subtitle">Business</div>
-                    <h3 class="title title-h3 posts-author__title">Font sizes in UI design: The complete guide to follow</h3>
-                    <div class="text posts-author__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore    et dolore magna aliqua.</div>
+                    <a href="/category.html" class="text text_medium posts-author__subtitle">Business</a>
+                    <a href="/blogposts.html" class="title title-h3 posts-author__title">Font sizes in UI design: The complete guide to follow</a>
+                    <p class="text posts-author__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore    et dolore magna aliqua.</p>
                 </div>
             </div>
             <div class="posts-author__item">
-                <img src="img/author/office.png" alt="office" class="posts-author__img">
+                <a href="/blogposts.html"><img src="img/author/office.png" alt="office" class="posts-author__img"></a>
                 <div class="posts-author__descr">
-                    <div class="text text_medium posts-author__subtitle">ECONOMY</div>
-                    <h3 class="title title-h3 posts-author__title">How to build rapport with your web design clients</h3>
-                    <div class="text posts-author__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.</div>
+                    <a href="/category.html" class="text text_medium posts-author__subtitle">ECONOMY</a>
+                    <a href="/blogposts.html" class="title title-h3 posts-author__title">How to build rapport with your web design clients</a>
+                    <p class="text posts-author__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
