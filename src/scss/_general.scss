@@ -30,9 +30,10 @@
     }
     &__text {
         margin-top: 25px;
-        span {
+        a {
             color: $main_color;
             font-family: $inter_regular;
+            text-decoration: none;
         }
     }
     &__content {
@@ -56,6 +57,8 @@
     }
     &__img {
         width: 100%;
+        height: auto;
+        object-fit: cover;
         margin-bottom: 32px;
     }
     &__info {
@@ -63,15 +66,17 @@
     }
     &__subtitle {
         margin-bottom: 8px;
-        span {
+        a {
             font-family: $inter_regular;
             color: $other_color;
+            text-decoration: none;
         }
         &_main {
             margin-bottom: 16px;
-            span {
+            a {
                 font-family: $inter_regular;
                 color: $other_color;
+                text-decoration: none;
             }
         } 
     }
@@ -93,7 +98,6 @@
     &__item {
         display: block;
         padding: 32px 32px 25px 32px;
-        text-decoration: none;
         transition: 0.5s;
         &:last-child {
             padding-bottom: 25px;
@@ -111,24 +115,7 @@
         gap: 110px;
         padding: 95px 80px;
         background-color: $background_color;
-        &:before {
-            content: "";
-            position: absolute;
-            left: 220px;
-            top: 0;
-            width: 780px;
-            height: 23px;
-            background: $main_color;  
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            height: 23px;
-            width: 282px;
-            background: $other_color;
-            left: 1000px;
-            top: 0;
-        }
+        @include after_shape;
     }
     &__subtitle {
         margin-bottom: 25px;
@@ -181,8 +168,11 @@
 .start {
     padding-top: 130px;
     &__img {
-        width: 949px;
-        height: 705px;
+        img {
+            width: 950px;
+            height: 705px;
+            object-fit: cover;
+        } 
     }
     &__descr {
         position: absolute;
@@ -224,32 +214,34 @@
         img {
             display: block;
             margin: 0 auto;
-            margin-bottom: 20px;
-            width: 100%;
-            height: 100%;
             max-width: 128px;
             max-height: 128px;
             object-fit: cover;
-            border-radius: 50%;
         }
     }
-    &__icon {
-        width: 100%;
-        height: 100%;
-        max-width: 16px;
-        max-height: 16px;
+    &__content {
+        text-decoration: none;
     }
     &__subtitle {
         text-align: center;
+        margin-top: 20px;
     }
     &__text {
         text-align: center;
-        margin-bottom: 20px;
     }
     &__sociale {
         display: flex;
         gap: 16px;
         justify-content: center;
+        margin-top: 20px;
+    }
+    &__icon {
+        img {
+            max-width: 16px;
+            max-height: 16px;
+            object-fit: cover;
+        }
+        
     }
     &__logo {
         margin-top: 95px;
@@ -311,10 +303,8 @@
     &__wrapper {  
         padding: 80px 0;
         display: flex;
+        align-items: center;
         gap: 140px;
-    }
-    &__descr {
-        padding-top: 15px;
     }
     &__subtitle {
         font-family: $inter_medium;
@@ -327,9 +317,10 @@
     &__text {
         margin-top: 16px;
         color: $border_button_color;
-        span {
+        a {
             font-family: $inter_regular;
             color: $other_color;
+            text-decoration: none;
         }
     }
     &__content {
@@ -340,6 +331,8 @@
         margin-top: 32px;
     }
     &__img {
+        max-width: 515px;
+        height: auto;
         object-fit: cover;
     }
 }
@@ -347,22 +340,27 @@
     padding-top: 65px;
     &__heading {
         border-bottom: 1px solid $border_color;
-        padding: 0 0 32px 0;
+        padding-bottom: 32px;
     }
     &__block {
         display: flex;
         gap: 30px;
+        align-items: center;
         padding-top: 65px;
     }
-    &__descr {
-        padding: 55px 155px 55px 0;
+    &__img {
+        width: 490px;
+        height: 318px;
+        object-fit: cover;
     }
     &__subtitle {
         color: $other_color;
         text-decoration: none;
     }
     &__title {
+        display: block;
         margin-top: 20px;
+        text-decoration: none;
     }
     &__text {
         margin-top: 16px;
@@ -383,9 +381,9 @@
         transition: 0.5s;
         &:hover {
             color: $text_color;
-            font-size: 28px;
-            line-height: 40px;
-            letter-spacing: -1px;
+            // font-size: 28px;
+            // line-height: 40px;
+            // letter-spacing: -1px;
         }
     }
 }
@@ -431,6 +429,8 @@
     &__img {
         width: 48px;
         height: 48px;
+        object-fit: cover;
+        border-radius: 48px;
     }
     &__subtitle {
         color: $other_color;
@@ -443,9 +443,19 @@
         margin-top: 25px;
         margin-bottom: 35px;
     }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+    }
 }
 .content {
     padding-top: 65px;
+    &__img {
+        width: 100%;
+        height: 580px;
+        object-fit: cover;
+    }
     &__block {
         padding-top: 65px;
         width: 845px;
@@ -485,18 +495,22 @@
         gap: 30px;
     }
     &__img {
-        max-width: 405px;
+        width: 405px;
+        height: 318px;
+        object-fit: cover;
     }
     &__text {
         padding-top: 30px;
         color: $border_button_color;
-        span {
+        a {
             font-family: $inter_regular;
             color: $other_color;
+            text-decoration: none;
         }
     }
     &__subtitle {
         padding-top: 16px;
+        text-decoration: none;
     }
     &__content {
         padding-top: 16px;
@@ -505,6 +519,9 @@
 }
 .about-us {
     padding-top: 80px;
+    &__container {
+        @include before_shape;
+    }
     &__descr {
         display: flex;
         gap: 35px;
@@ -519,14 +536,17 @@
         z-index: 1;
     }
     &__text {
-        max-width: 477px;
+        max-width: 480px;
         color: $border_button_color;
     }
     &__img {
         position: relative;
-        top: -63px;
-        height: 444px;
-        @include before_shape;
+        top: -64px;
+        img {
+            width: 100%;
+            height: 444px;
+            object-fit: cover;
+        } 
     }
     &__wrapper {
         position: absolute;
@@ -539,16 +559,34 @@
         background-color: $main_color;
         padding: 32px 48px;
     }
+    // &__content {
+    //     display: flex;
+    //     gap: 32px;
+    //     padding: 73px 109px 64px 109px;
+    //     // @include before_shape;
+    // }
+    // &__title {
+    //     margin-top: 25px;
+    //     width: 475px;
+    // }
+    // &__text-block {
+    //     margin-top: 15px;
+    //     color: $border_color
+    // }
+}
+.creating {
+    margin-top: -68px;
     &__content {
         display: flex;
         gap: 32px;
-        padding: 73px 109px 64px 109px;
+        padding: 130px 109px 64px 109px;
+        background: $background_color;
     }
     &__title {
         margin-top: 25px;
         width: 475px;
     }
-    &__text-block {
+    &__text {
         margin-top: 15px;
         color: $border_color
     }
@@ -568,6 +606,11 @@
     }
     &__img {
         position: relative;
+        img {
+            width: 624px;
+            height: 480px;
+            object-fit: cover;
+        }
         @include befor_rectangle;
     }
 }
@@ -586,10 +629,15 @@
     }
     &__img {
         position: relative;
+        img {
+            width: 624px;
+            height: 480px;
+            object-fit: cover;
+        }
         @include before_circle
     }
 }
-.business {
+.promo-business {
     padding: 80px 462px;
     text-align: center;
     background:$background_color;
@@ -617,21 +665,27 @@
     &__item {
         display: flex;
         gap: 32px;
+        align-items: center;
     }
     &__img {
         max-width: 294px;
-    }
-    &__descr {
-        padding: 33px 0;
+        height: 312px;
+        object-fit: cover;
     }
     &__subtitle {
         margin-bottom: 20px;
         color: $other_color;
     }
     &__title {
-        margin-bottom: 16px;
+        text-decoration: none;
     }
-    &__tabs {
+    &__block-tabs {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    &__tabs-big {
+        margin-top: 40px;
         display: flex;
         gap: 24px;
         list-style-type: none;
@@ -639,19 +693,22 @@
         flex-wrap: wrap;
     }
     &__tab {
-        display: flex;
         width: 296px;
         height: 96px;
-        gap: 16px;
-        align-items: center;
         padding: 24px 24px;
-        border: 1.5px solid #C1C1C3;
+        border: 1.5px solid $tab_color;
         text-decoration: none;
         cursor: pointer;
         transition: 0,5s all;
         &_active {
             background: $main_color;
             border: none;
+        }
+        a {
+            text-decoration: none;
+            display: flex;
+            gap: 16px;
+            align-items: center;
         }
     }
     &__icon {
@@ -661,6 +718,7 @@
         border-radius: 5px;
     }
     &__tabs-mini {
+        margin-top: 24px;
         display: flex;
         flex-wrap: wrap;
         gap: 16px 16px;
@@ -668,47 +726,41 @@
     }
     &__tab-mini {
         display: flex;
-        align-items: center;
-        font-family: $sen_bold;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 32px;
+        align-items: center; 
         border-radius: 28px;
         padding: 8px 26px;
         color: $text_color;
-        border: 2px solid var(--Medium-grey, #6D6E76);
+        border: 2px solid $border_color;
         width: max-content;
         height: 48px;
+        a {
+            text-decoration: none;
+            color: $text_color;
+            font-family: $sen_bold;
+            font-size: 14px;
+            line-height: 32px;
+        }
     }
 }
 
 .promo-author {
     padding-top: 130px;
-    height: 550px;
+    min-height: 550px;
     background: $background_color;
+    &__container_author {
+        @include shape;
+       
+    }
     &__wrapper {
         display: flex;
         gap: 35px;
+        align-items: center;
     }
     &__img {
-        // @include before_shape;
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 400px;
-            width: 752px;
-            height: 23px;
-            background: $main_color;  
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            height: 23px;
-            width: 270px;
-            background: $other_color;
-            left: 752px;
-            top: 400px;
+        img {
+            width: 251px;
+            height: 294px;
+            object-fit: cover;
         }
     }
     &__descr {
@@ -724,10 +776,12 @@
         gap: 16px; 
     }
     &__icon {
-        width: 100%;
-        height: 100%;
-        max-width: 16px;
-        max-height: 16px;
+        img {
+            max-width: 16px;
+            max-height: 16px;
+            object-fit: cover;
+        }
+        
     }
 }
 .posts-author {
@@ -738,12 +792,21 @@
         gap: 32px;
         align-items: center;
     }
+    &__img {
+        width: 412px;
+        height: 320px;
+        object-fit: cover;
+    }
     &__subtitle {
+        display: block;
         margin-bottom: 20px;
-        color: $other_color;
+        color: #592ea9;
+        text-decoration: none;
     }
     &__title {
+        display: block;
         margin-bottom: 16px;
+        text-decoration: none;
     }
 }
 .contacts {
@@ -752,15 +815,17 @@
         text-align: center;
     }
     &__title {
-        margin: 12px 0 24px 0;
+        margin-top: 12px;
+    }
+    &__descr {
+        margin-top: 24px;
     }
     &__wrapper {
         margin-top: 64px;
         display: flex;
         gap: 45px;
         padding: 48px 64px;
-        width: 768px;
-        height: 240px;
+        height: max-content;
         background: $other_color;
     }
     &__item {

@@ -161,6 +161,7 @@
         // transform: translateY(-50%);
         right: 185px;
         border:none;
+        z-index: 100;
         cursor: pointer;
         img, svg {
             width: 48px;
@@ -190,7 +191,6 @@
         right: 110px;
         left: auto;
         border: none;
-        z-index: 100;
         cursor: pointer;
         img, svg {
             width: 48px;

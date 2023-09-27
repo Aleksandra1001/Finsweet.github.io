@@ -45,8 +45,8 @@ $(document).ready(function(){
     infinite: false,
     speed: 1200,
     adaptiveHeight: true,
-    prevArrow: '<button type="button" class="slick-next"><img class="img-svg" src="../img/icons/back_button.svg"></button>',
-    nextArrow: '<button type="button" class="slick-prev"><img class="img-svg" src="../img/icons/back_button.svg"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img class="img-svg" src="../img/icons/back_button.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img class="img-svg" src="../img/icons/back_button.svg"></button>',
     responsive: [
       {
         breakpoint: 992,
