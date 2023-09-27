@@ -23,20 +23,42 @@
     &:before {
         content: "";
         position: absolute;
-        left: 109px;
-        top: 421px;
-        width: 310px;
+        right: 309px;
+        bottom: 67px;
+        width: 550px;
         height: 23px;
-        background: $other_color;  
+        background: $main_color;
+        z-index: 10; 
     }
     &:after {
         content: "";
         position: absolute;
         height: 23px;
-        width: 550px;
-        background: $main_color;
-        left: 415px;
-        top: 421px;
+        width: 312px;
+        background: $other_color;
+        left: 109px;
+        bottom: 67px;
+    }
+}
+
+@mixin shape {
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 397px;
+        width: 752px;
+        height: 23px;
+        background: $main_color;  
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        height: 23px;
+        width: 270px;
+        background: $other_color;
+        left: 752px;
+        top: 397px;
     }
 }
   
