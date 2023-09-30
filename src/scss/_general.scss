@@ -82,6 +82,7 @@
     }
     &__descr {
         margin-bottom: 16px;
+        text-decoration: none;
     }
     &__text {
         margin-bottom: 32px;
@@ -105,6 +106,9 @@
         &:hover {
             background: $hover_text;
         }
+    }
+    &__title {
+        text-decoration: none;
     }
 }
 .about {
@@ -177,7 +181,7 @@
     &__descr {
         position: absolute;
         right: 0;
-        top: 120px;
+        bottom: 0;
         width: 705px;
         height: 585px;
         padding: 80px 80px;
@@ -246,8 +250,25 @@
     &__logo {
         margin-top: 95px;
         display: flex;
-        justify-content: space-between;
+        gap: 86px;
+    }
+    &__block {
+        min-width: 136px;
+    }
+    &__subheading, &__heading {
+        color: $border_color;
+    }
+    &__links {
+        display: flex;
         align-items: center;
+        gap: 75px;
+    }
+    &__img{
+        .img-svg {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+        }
     }
 }
 
