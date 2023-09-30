@@ -1,20 +1,3 @@
-// const hamburger = document.querySelector('.hamburger'),
-//     menu = document.querySelector('.menu'),
-//     closeElem = document.querySelector('.menu__close');
-  
-// hamburger.addEventListener('click', () => {
-//     menu.classList.add('active');
-// });
-// closeElem.addEventListener('click', () => {
-//     menu.classList.remove('active');
-// });
-
-// const percents = document.querySelectorAll('.skills__rating-percent'),
-//     rectangles = document.querySelectorAll('.skills__rating-rectangle span');
-// percents.forEach( (item, i) => {
-//     rectangles[i].style.width = item.innerHTML;
-// });
-
 $("img.img-svg").each(function () {
   var $img = $(this);
   var imgClass = $img.attr("class");
@@ -49,7 +32,7 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"><img class="img-svg" src="../img/icons/back_button.svg"></button>',
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 767,
         settings: {
           dots: true,
           arrows: false
@@ -81,6 +64,32 @@ $(document).ready(function(){
       "xml"
     );
   });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.header__block');
+  const menuItem = document.querySelectorAll('.header__link');
+  const hamburger = document.querySelector('.hamburger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('header__block_active');
+
+      if (hamburger.classList.contains('hamburger_active')) {
+          document.body.style.cssText = 'overflow: hidden'
+      } else {
+          document.body.style.cssText = 'overflow: auto'
+      }
+   
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          document.body.style.cssText = 'overflow: auto'
+          hamburger.classList.toggle('hamburger_active');
+          menu.classList.toggle('header__block_active');
+      })
+  })
 });
 
   
