@@ -28,6 +28,9 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        width: 140px;
+        height: auto;
+        object-fit: cover;
     }
     &__block {
         display: flex;
@@ -243,6 +246,9 @@
     &__logo {
         display: flex;
         justify-content: flex-start;
+        width: 140px;
+        height: auto;
+        object-fit: cover;
     }
     &__block {
         display: flex;
@@ -263,9 +269,6 @@
         justify-content: space-between;
         gap: 64px;
         padding: 80px 64px;
-    }
-    &__title {
-        max-width: 562px;
     }
     &__form {
         display: flex;
