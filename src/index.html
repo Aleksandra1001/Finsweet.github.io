@@ -26,6 +26,11 @@
                 </nav>
             </div>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
     <section class="promo">
@@ -48,7 +53,7 @@
                     <div class="posts__feature">     
                         <img src="img/home/posts.png" alt="building" class="posts__img">
                         <div class="text text_small posts__subtitle_main">By <a href="/author.html">John Doe</a>  |   May 23, 2022</div>
-                        <h4 class="title title-h4 posts__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h4>
+                        <a href="/blog.html" class="title title-h4 posts__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
                         <p class="text posts__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                         <a href="/blog.html" class="button posts__button">Read More ></a>
                     </div>
@@ -62,19 +67,19 @@
                     <div class="posts__info">
                         <div class="posts__item">
                             <div class="text text_small posts__subtitle">By <a href="/author.html">John Doe</a>  |   Aug 23, 2021</div>
-                            <h5 class="title title-h5">8 Figma design systems that you can download for free today.</h5>
+                            <a href="/blog.html" class="title title-h5 posts__title">8 Figma design systems that you can download for free today.</a>
                         </div>
                         <div class="posts__item">
                             <div class="text text_small posts__subtitle">By <a href="/author.html">John Doe</a>  |   Aug 23, 2021</div>
-                            <h5 class="title title-h5">8 Figma design systems that you can download for free today.</h5>
+                            <a href="/blog.html" class="title title-h5 posts__title">8 Figma design systems that you can download for free today.</a>
                         </div>
                         <div class="posts__item">
                             <div class="text text_small posts__subtitle">By <a href="/author.html">John Doe</a>  |   Aug 23, 2021</div>
-                            <h5 class="title title-h5">8 Figma design systems that you can download for free today.</h5>
+                            <a href="/blog.html" class="title title-h5 posts__title">8 Figma design systems that you can download for free today.</a>
                         </div>
                         <div class="posts__item">
                             <div class="text text_small posts__subtitle">By <a href="/author.html">John Doe</a>  |   Aug 23, 2021</div>
-                            <h5 class="title title-h5">8 Figma design systems that you can download for free today.</h5>
+                            <a href="/blog.html" class="title title-h5 posts__title">8 Figma design systems that you can download for free today.</a>
                         </div>
                     </div>
                 </div>
@@ -231,15 +236,27 @@
                 </div>
             </div>
             <div class="authors__logo">
-                <div class="author__block">
-                    <div class="text text_small">We are</div>
-                    <h5 class="title title-h5">Featured in</h5>
+                <div class="authors__block">
+                    <div class="text text_small authors__subheading">We are</div>
+                    <h5 class="title title-h5 authors__heading">Featured in</h5>
                 </div>
-                <a href="#"><img src="img/logo/Logo_1.svg" alt="Logo"></a>
-                <a href="#"><img src="img/logo/Logo_2.svg" alt="Logo"></a>
-                <a href="#"><img src="img/logo/Logo 3.svg" alt="Logo"></a>
-                <a href="#"><img src="img/logo/Logo_4.svg" alt="Logo"></a>
-                <a href="#"><img src="img/logo/Logo_5.svg" alt="Logo"></a>
+                <div class="authors__links">
+                    <a href="#" class="authors__img">
+                        <img class="img-svg" src="img/logo/Logo_1.svg" alt="Logo">
+                    </a>
+                    <a href="#" class="authors__img">
+                        <img class="img-svg" src="img/logo/Logo_2.svg" alt="Logo">
+                    </a>
+                    <a href="#" class="authors__img">
+                        <img class="img-svg" src="img/logo/Logo 3.svg" alt="Logo">
+                    </a>
+                    <a href="#" class="authors__img">
+                        <img class="img-svg" src="img/logo/Logo_4.svg" alt="Logo">
+                    </a>
+                    <a href="#" class="authors__img">
+                        <img class="img-svg" src="img/logo/Logo_5.svg" alt="Logo">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -314,27 +331,15 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__menu">
-                <div class="footer__logo">
-                    <a href="/">
-                        <img class="img-svg" src="img/logo/header_logo.svg" alt="logo">
-                    </a>
-                </div>
+                <a href="/" class="footer__logo">
+                    <img class="img-svg" src="img/logo/header_logo.svg" alt="logo">
+                </a>
                 <div class="footer__block">
-                    <div class="footer__item">
-                        <a href="/index.html" class="footer__link">Home</a>
-                    </div>
-                    <div class="footer__item">
-                        <a href="/blog.html" class="footer__link">Blog</a>
-                    </div>
-                    <div class="footer__item">
-                        <a href="/about.html" class="footer__link">About Us</a>
-                    </div>
-                    <div class="footer__item">
-                        <a href="/contacts.html" class="footer__link">Contact us</a>
-                    </div>
-                    <div class="footer__item">
-                        <a href="/PrivacyPolicy.html" class="footer__link">Privacy Policy</a>
-                    </div>
+                    <a href="/index.html" class="footer__link">Home</a>
+                    <a href="/blog.html" class="footer__link">Blog</a>
+                    <a href="/about.html" class="footer__link">About Us</a>
+                    <a href="/contacts.html" class="footer__link">Contact us</a>
+                    <a href="/PrivacyPolicy.html" class="footer__link">Privacy Policy</a>
                 </div>
             </div>
             <div class="footer__subscribe">
