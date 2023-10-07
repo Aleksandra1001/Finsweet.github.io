@@ -643,7 +643,7 @@
         position: relative;
         img {
             width: 624px;
-            height: 480px;
+            height: auto;
             object-fit: cover;
         }
         @include befor_rectangle;
@@ -666,7 +666,7 @@
         position: relative;
         img {
             width: 624px;
-            height: 480px;
+            height: auto;
             object-fit: cover;
         }
         @include before_circle

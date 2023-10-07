@@ -149,6 +149,48 @@
             }
         }
     }
+    .creating {
+        &__block {
+            width: 400px;
+        }
+        &__title {
+            width: 440px;
+        }
+    }
+    .team {
+        &__content {
+            gap: 100px;
+        }
+        &__img {
+            &:before {
+                width: 95px;
+                height: 110px;
+                right: 460px;
+                top: 60px;
+            }
+            img {
+                width: 500px;
+            }
+        }
+    }
+    .blog {
+        &__img {
+            &:before {
+                width: 70px;
+                height: 70px;
+                top: 346px;
+                left: 60px;
+            }
+            img {
+                width: 500px;
+            }
+        }
+    }
+    .authors {
+        &__list {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -346,6 +388,79 @@
         }
         &__img {
             width: 405px;
+        }
+    }
+    .about-us {
+        padding-top: 80px;
+        &__container {
+            &:before {
+                height: 20px;
+                width: 200px;
+                left: 0;
+            }
+            &:after {
+                height: 20px;
+                width: 400px;
+                left: 200px;
+            }
+        }
+        &__descr {
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            margin-left: 0;
+        }
+        &__heading {
+            padding: 0;
+            max-width: 100%;
+        }
+        &__text {
+            max-width: 100%;
+        }
+        &__img {
+            img {
+                height: 350px;
+            }
+        }
+        &__wrapper {
+            left: 0;
+            gap: 25px;
+            width: 510px;
+            height: 100px;
+            padding: 20px 30px;
+        }
+    }
+    .creating {
+        &__content {
+            padding-top: 90px;
+            flex-wrap: wrap;
+            gap: 35px;
+        }
+        &__title {
+            margin-top: 20px;
+        }
+    }
+    .team {
+        padding-top: 90px;
+        &__content {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &__block {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .blog {
+        padding-top: 90px;
+        &__content {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &__block-img {
+            display: block;
+            margin: 0 auto;
+            order: 2;
         }
     }
 }
@@ -601,6 +716,63 @@
         padding-top: 60px;
         &__list {
             gap: 40px;
+        }
+    }
+    .about-us {
+        &__container {
+            &:before {
+                height: 15px;
+                width: 125px;
+            }
+            &:after {
+                height: 15px;
+                width: 295px;
+                left: 125px;
+            }
+        }
+        &__wrapper {
+            bottom: 240px;
+            left: 0;
+            gap: 20px;
+            width: 370px;
+            height: 115px;
+            padding: 15px 25px;
+        }
+    }
+    .creating {
+        &__content {
+            padding: 80px 0 40px 0;
+        }
+        &__title {
+            width: 100%;
+        }
+    }
+    .team {
+        padding-top: 80px;
+        &__img {
+            &:before {
+                width: 60px;
+                height: 75px;
+                right: 280px;
+                top: 28px;
+            }
+            img {
+                width: 300px;
+            }
+        }
+    }
+    .blog {
+        padding-top: 80px;
+        &__img {
+            &:before {
+                width: 45px;
+                height: 45px;
+                top: 205px;
+                left: 35px;
+            }
+            img {
+                width: 300px;
+            }
         }
     }
 }
@@ -902,6 +1074,56 @@
         &__list {
             padding-top: 30px;
             gap: 30px;
+        }
+    }
+    .about-us {
+        &__container {
+            &:before {
+                height: 12px;
+                width: 105px;
+                left: 15px;
+            }
+            &:after {
+                height: 12px;
+                width: 216px;
+                left: 112px;
+            }
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            bottom: 224px;
+            left: 15px;
+            gap: 10px;
+            width: 300px;
+            height: 130px;
+            padding: 10px 15px;
+        } 
+    }
+    .team {
+        &__img {
+            &:before {
+                width: 45px;
+                height: 55px;
+                right: 230px;
+            }
+            img {
+                width: 250px;
+            }
+        }
+    }
+    .blog {
+        &__img {
+            &:before {
+                width: 30px;
+                height: 30px;
+                top: 175px;
+                left: 31px;
+            }
+            img {
+                width: 250px;
+            }
         }
     }
 }
