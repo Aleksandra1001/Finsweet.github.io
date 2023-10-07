@@ -23,21 +23,21 @@
     &:before {
         content: "";
         position: absolute;
-        right: 309px;
-        bottom: 67px;
-        width: 550px;
+        left: 109px;
+        bottom: 0;
+        width: 312px;
         height: 23px;
-        background: $main_color;
+        background: $other_color; 
         z-index: 10; 
     }
     &:after {
         content: "";
         position: absolute;
         height: 23px;
-        width: 312px;
-        background: $other_color;
-        left: 109px;
-        bottom: 67px;
+        width: 550px;
+        background: $main_color;
+        left: 420px;
+        bottom: 0;
     }
 }
 
