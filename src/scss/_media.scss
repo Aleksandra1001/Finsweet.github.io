@@ -115,6 +115,40 @@
             flex-wrap: wrap;
         }
     }
+    .promo-blog {
+        &__wrapper {
+            gap: 50px;
+        }
+        &__img {
+            max-width: 450px;
+        }
+    }
+    .posts-blog {
+        &__img {
+            width: 420px;
+            height: 300px;
+        }
+    }
+    .read {
+        &__list {
+            gap: 22px;
+        }
+        &__img {
+            width: 305px;
+            height: auto;
+        }
+    }
+    .about-us {
+        &__container {
+            &:before {
+                width: 250px;
+            }
+            &:after {
+                width: 490px;
+                left: 360px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -274,7 +308,46 @@
         &__wrapper {
             margin-top: 40px;
         }
-    }  
+    }
+    .promo-blog {
+        &__wrapper {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+    .posts-blog {
+        &__block {
+            flex-direction: column;
+        }
+    }
+    .catagory-blog {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .heading {
+        padding-top: 90px;
+        &__block-descr {
+            max-width: 600px;
+        }
+    }
+    .content {
+        padding-top: 55px;
+        &__block {
+            padding-top: 55px;
+            width: 600px;
+        }
+    }
+    .read {
+        padding-top: 90px;
+        &__list {
+            padding-top: 55px;
+            flex-wrap: wrap;
+        }
+        &__img {
+            width: 405px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -499,6 +572,37 @@
             margin-top: 30px;
         }
     }
+    .posts-blog {
+        padding-top: 35px;
+        &__block {
+            padding-top: 55px;
+        }
+    }
+    .heading {
+        padding-top: 60px;
+        &__block-descr {
+            margin-top: 25px;
+            max-width: 350px;
+        }
+        &__wrapper {
+            margin-top: 25px;
+        }
+    }
+    .content {
+        &__block {
+            padding-top: 40px;
+            width: 350px;
+        }
+        &__descr {
+            margin-bottom: 40px;
+        }
+    }
+    .read {
+        padding-top: 60px;
+        &__list {
+            gap: 40px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -515,6 +619,9 @@
             z-index: 1000;
             .img-svg {
               width: 100%;
+              &-blog path {
+                fill: $text_color;
+              }
             }
         }
         &__block {
@@ -561,6 +668,7 @@
             display: block;
             height: 2px;
             width: 100%;
+            // background-color: black;
             background-color: $accent_color;
             margin-bottom: 2px;
             transition: 0.5s all;
@@ -594,7 +702,11 @@
                 font-size: 24px;
                 line-height: 28px;
             }
-        } 
+        }
+        &-h5 {
+            font-size: 18px;
+            line-height: 26px;
+        }
     }
     .text {
         font-size: 16px;
@@ -727,6 +839,69 @@
             margin-top: 20px;
             padding: 20px;
             gap: 15px;
+        }
+    }
+    .promo-blog {
+        &__wrapper {
+            padding: 80px 0 40px 0;
+            gap: 30px;
+        }
+        &__img {
+            max-width: 320px;
+            height: auto;
+        }
+    }
+    .posts-blog {
+        padding-top: 25px;
+    }
+    .posts-blog {
+        &__heading {
+            padding-bottom: 22px;
+        }
+        &__block {
+            padding-top: 45px;
+        }
+        &__text {
+            margin-top: 10px;
+        }
+        &__img {
+            width: 320px;
+            height: auto;
+        }
+    }
+    .catagory-blog {
+        &__list {
+            grid-template-columns: 1fr;
+            margin-top: 30px;
+        }
+    }
+    .heading {
+        padding-top: 80px;
+        &__block-descr {
+            margin-top: 20px;
+            max-width: 300px;
+        }
+        &__wrapper {
+            margin-top: 20px;
+        }
+    }
+    .content {
+        &__block {
+            padding-top: 20px;
+            width: 300px;
+        }
+        &__descr {
+            margin-bottom: 20px;
+        }
+    }
+    .read {
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+        &__list {
+            padding-top: 30px;
+            gap: 30px;
         }
     }
 }
