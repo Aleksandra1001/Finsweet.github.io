@@ -784,11 +784,11 @@
 
 .promo-author {
     padding-top: 130px;
-    min-height: 550px;
+    // min-height: 550px;
     background: $background_color;
     &__container_author {
-        @include shape;
-       
+        min-height: 420px;
+        @include shape; 
     }
     &__wrapper {
         display: flex;
