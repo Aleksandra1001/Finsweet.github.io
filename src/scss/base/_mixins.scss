@@ -46,7 +46,7 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 397px;
+        bottom: 0;
         width: 752px;
         height: 23px;
         background: $main_color;  
@@ -58,7 +58,7 @@
         width: 270px;
         background: $other_color;
         left: 752px;
-        top: 397px;
+        bottom: 0;
     }
 }
   
