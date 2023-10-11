@@ -23,7 +23,7 @@
     &:before {
         content: "";
         position: absolute;
-        left: 109px;
+        left: 0;
         bottom: 0;
         width: 312px;
         height: 23px;
@@ -70,8 +70,9 @@
         height: 116px;
         background-color: $main_color;
         border-radius: 50% 0 0 0;
-        top: 114px;
-        right: 578px;
+        top: 25%;
+        left: 0;
+        transform: translateX(-50%);
     }
 }
 

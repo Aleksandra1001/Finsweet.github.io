@@ -547,9 +547,6 @@
 }
 .about-us {
     padding-top: 80px;
-    &__container {
-        @include before_shape;
-    }
     &__descr {
         display: flex;
         gap: 35px;
@@ -574,6 +571,7 @@
     &__img {
         position: relative;
         img {
+            display: block;
             width: 100%;
             height: auto;
             object-fit: cover;
@@ -581,14 +579,15 @@
     }
     &__wrapper {
         position: absolute;
-        bottom: 23px;
+        bottom: 0;
         left: 109px;
         display: flex;
         gap: 68px;
         width: 630px;
         height: 156px;
         background-color: $main_color;
-        padding: 32px 48px;
+        padding: 32px 48px 55px 48px;
+        @include before_shape;
     }
     // &__content {
     //     display: flex;
