@@ -1,0 +1,104 @@
+@media (max-width: 1024px) {
+    .container {
+        max-width: 700px;
+    }
+    .container_author {
+        max-width: 700px;
+    }
+    .promo-author {
+        padding-top: 80px;
+        &__container_author {
+            &:before {
+                width: 560px;
+            }
+            &:after {
+                width: 140px;
+                left: 560px;
+            }
+        }
+    }
+    .posts-author {
+        padding-top: 80px;
+        &__item {
+            margin-top: 45px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 420px;
+    }
+    .container_author {
+        max-width: 420px;
+    }
+    .promo-author {
+        &__container_author {
+            &:before {
+                width: 260px;
+                height: 15px;
+            }
+            &:after {
+                width: 160px;
+                height: 15px;
+                left: 260px;
+            }
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            padding-bottom: 60px;
+        }
+        &__sociale {
+            gap: 25px;
+        }
+    }
+    .posts-author {
+        &__item {
+            margin-top: 30px;
+        }
+        &__img {
+            width: 320px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+    .container_author {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .promo-author {
+        padding-top: 130px;
+        &__container_author {
+            &:before {
+                width: 200px;
+                height: 12px;
+                left: 15px;
+            }
+            &:after {
+                width: 100px;
+                height: 12px;
+                left: 200px;
+            }
+        }
+        &__wrapper {
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+    }
+    .posts-author {
+        &__item {
+            flex-direction: column;
+        }
+        &__img {
+            width: 300px;
+            height: auto;
+        }
+    }
+}

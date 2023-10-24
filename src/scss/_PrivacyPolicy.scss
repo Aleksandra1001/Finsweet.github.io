@@ -1,0 +1,17 @@
+.policy {
+    padding: 80px 0;
+    text-align: center;
+    background: $background_color;
+    &__title {
+        margin-bottom: 5px;
+    }
+}
+.descr {
+    margin-top: 130px;
+    &__text {
+        margin: 32px 0;
+    }
+    &__title {
+        margin-bottom: 24px;
+    }
+}

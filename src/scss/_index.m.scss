@@ -1,0 +1,441 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .posts {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 562px 372px;
+            gap: 25px;
+        }
+        &__item {
+            padding: 28px 28px 21px 28px;
+        }
+    }
+    .about {
+        &__block {
+            gap: 80px;
+            &:before {
+                right: 220px;
+                width: 530px;
+            }
+            &:after {
+                width: 220px;
+            }
+        }
+        &__link {
+            font-size: 18px;
+            line-height: 32px;
+            letter-spacing: 0;
+        }
+    }
+    .start {
+        &__descr {
+            bottom: 0;
+            width: 640px;
+            height: 580px;
+            padding: 60px 60px;
+        }
+        &__img {
+            img {
+                width: 690px;
+            }
+        }
+    }
+    .authors {
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__logo {
+            gap: 50px;
+        }
+        &__links {
+            gap: 40px;
+        }
+        &__img {
+            .img-svg {
+                width: 120px;
+            }
+        }
+    }
+    .reviews {
+        &__descr {
+            grid-template-columns: 410px 550px;
+            &:before {
+                left: 410px;
+                top: 50px;
+            }
+        }
+        &__item {
+            padding: 60px 55px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 550px;
+            .slick-prev {
+                bottom: 75px;
+                right: 135px;
+            }
+            .slick-next {
+                bottom: 75px;
+                right: 65px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 700px;
+    }
+    .promo {
+        padding-top: 90px;
+        min-height: 620px;
+        &:before {
+            height: 620px;
+        }
+    }
+    .posts {
+        padding-top: 90px;
+        &__wrapper {
+            grid-template-columns: 398px 290px;
+            gap: 10px;
+        }
+        &__feature, &__info {
+            margin-top: 20px;
+        }
+        &__item {
+            padding: 25px 25px 18px 25px;
+        }
+    }
+    .about {
+        padding-top: 90px;
+        &__block {
+            padding: 80px 75px;
+            grid-template-columns: 1fr;
+            &:before {
+                height: 20px;
+                width: 380px;
+                top: -20px;
+                right: 160px; 
+            }
+            &:after {
+                width: 160px;
+                height: 20px;
+                top: -20px;
+            }
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+    }
+    .catagory {
+        padding-top: 90px;
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .start {
+        padding-top: 90px;
+        &__img {
+            img {
+                width: 495px;
+            }
+        }
+        &__descr {
+            width: 460px;
+            height: 585px;
+            padding: 50px 50px;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+    }
+    .authors {
+        padding-top: 90px;
+        &__list {
+            grid-template-columns: 1fr 1fr;
+        }
+        &__logo {
+            margin-top: 80px;
+            gap: 60px;
+            align-items: center;
+        }
+        &__links {
+            flex-wrap: wrap;
+            gap: 20px 40px;
+        }
+    }
+    .reviews {
+        padding-top: 90px;
+        &__descr {
+            grid-template-columns: 1fr;
+            &:before {
+                height: 1px;
+                width: 590px;
+                left: 50px;
+                top: 270px;
+            }
+        }
+        &__wrapper {
+            margin-top: 90px;
+        }
+    }
+    .carousel {
+        .slick-prev {
+            bottom: 75px;
+            right: 125px;
+        }
+        .slick-next {
+            bottom: 75px;
+            right: 55px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 420px;
+    }
+    .promo {
+        padding-top: 60px;
+        min-height: 100vh;
+        &:before {
+            height: 100vh;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+        &__button {
+            margin-top: 40px;
+        }
+    }
+    .posts {
+        padding-top: 80px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        &__item {
+            padding: 20px 25px 15px 25px;
+        }
+    }
+    .about {
+        padding-top: 80px;
+        &__block {
+            padding: 40px 55px;
+            gap: 40px;
+            &:before {
+                height: 15px;
+                width: 230px;
+                right: 90px;
+                top: -15px;
+            }
+            &:after {
+                width: 90px;
+                height: 15px;
+                top: -15px;
+            }
+        }
+    }
+    .catagory {
+        padding-top: 80px;
+    }
+    .start {
+        padding-top: 80px;
+        &__img {
+            img {
+                width: 350px;
+            }
+        }
+        &__descr {
+            width: 268px;
+            height: 537px;
+            padding: 20px;
+        }
+    }
+    .authors {
+        padding-top: 80px;
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__list {
+            gap: 20px;
+        }
+        &__logo {
+            margin-top: 60px;
+            gap: 40px;
+        }
+        &__links {
+            gap: 20px 40px;
+        }
+        &__img {
+            .img-svg {
+                width: 100px;
+            }
+        }
+    }
+    .reviews {
+        padding-top: 80px;
+        &__descr {
+            gap: 30px;
+            &:before {
+                width: 320px;
+                top: 260px;
+            }
+        }
+        &__item {
+            padding: 30px 40px;
+        }
+        &__wrapper {
+            margin-top: 60px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 420px;
+        }
+        .slick-dots {
+            text-align: center;
+            display: flex; // поставить кнопки в ряд
+            justify-content: center; // выровнять по центру
+            list-style: none; // убираем черные маркеры
+        }
+        .slick-dots button {
+            background: $accent_color; // цвет фона
+            border: none; // без рамки
+            border-radius: 50%; // радиус закругления
+            height: 25px; // высота точки
+            width: 25px; // ширина точки
+            margin: 10px; // отступы между точками
+            outline: none; // убираем обводку
+            font-size: 0;
+            // visibility: hidden;
+        }
+        .slick-dots li[class="slick-active"] button {
+            background: $main_color;;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+    .promo {
+        padding-top: 130px;
+        &__subtitle {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__title {
+            margin-top: 20px;
+        }
+    }
+    .posts {
+        padding-top: 60px;
+        &__future, &__info {
+            margin-top: 10px;
+        }
+    }
+    .about {
+        padding-top: 70px;
+        &__block {
+            &:before {
+                height: 12px;
+                width: 180px;
+                right: 85px;
+                top: -12px;
+            }
+            &:after {
+                width: 70px;
+                height: 12px;
+                top: -12px;
+                right: 15px;
+            }
+        }
+    }
+    .catagory {
+        padding-top: 60px;
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+    .start {
+        padding-top: 60px;
+        &__img {
+            img {
+                width: 280px;
+            }
+        }
+        &__descr {
+            width: 240px;
+            height: 620px;
+        }
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+    }
+    .authors {
+        padding-top: 80px;
+        &__list {
+            grid-template-columns: 1fr;
+        }
+        &__logo {
+            flex-direction: column;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__links {
+            justify-content: center;
+            gap: 15px 30px;
+        }
+    }
+    .reviews {
+        padding-top: 80px;
+        &__descr {
+            gap: 20px;
+            &:before {
+                width: 240px;
+                top: 230px;
+            }
+        }
+        &__item {
+            padding: 20px;
+            width: 320px;
+        }
+        &__subtitle {
+            margin-top: 0;
+        }
+        &__wrapper {
+            margin-top: 50px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 320px;
+        }
+        .slick-dots {
+            margin-top: 25px;
+        }
+        .slick-dots button {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+
+        }
+    }
+}
